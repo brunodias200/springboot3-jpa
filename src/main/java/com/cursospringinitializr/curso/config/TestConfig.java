@@ -8,13 +8,13 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 
 import com.cursospringinitializr.curso.entities.User;
-import com.cursospringinitializr.repositories.UserRepository;
+import com.cursospringinitializr.curso.repositories.UserRepository;
 
 @Configuration
 @Profile("test")
 public class TestConfig implements CommandLineRunner {
 
-	@Autowired 
+	@Autowired
 	private UserRepository userRepository;
 
 	@Override
